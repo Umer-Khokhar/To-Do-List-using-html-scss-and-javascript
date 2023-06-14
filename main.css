@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #42bff5;
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
+}
+.container .to-do-list {
+  padding: 1.2rem;
+  width: 700px;
+  height: 500px;
+  background-color: #fff;
+}
+.container .to-do-list input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.15rem;
+  border: 0;
+  display: block;
+  box-shadow: 0 0 2px gray;
+  outline: none;
+}
+.container .to-do-list #to-do-item {
+  list-style: none;
+  margin-top: 1rem;
+}
+.container .to-do-list #to-do-item li {
+  background-color: #151626;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  margin-top: 1rem;
+  border-radius: 3px;
+  font-family: "Titillium Web", sans-serif;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.container .to-do-list #to-do-item li.done {
+  text-decoration: line-through;
+}
+.container .to-do-list #to-do-item li img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .to-do-list #to-do-item li:hover {
+  background-color: rgba(21, 22, 38, 0.9529411765);
+}/*# sourceMappingURL=main.css.map */
