@@ -18,9 +18,10 @@
 }
 .container .to-do-list {
   padding: 1.2rem;
-  width: 700px;
-  min-height: 500px;
+  width: 600px;
+  min-height: 400px;
   background-color: #fff;
+  border-radius: 5px;
 }
 .container .to-do-list input {
   width: 100%;
