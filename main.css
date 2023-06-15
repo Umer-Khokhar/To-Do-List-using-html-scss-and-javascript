@@ -12,16 +12,31 @@
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-color: #42bff5;
+  background: rgb(1, 238, 255);
   margin: 0 auto;
   font-family: "Roboto Slab", serif;
+  color: rgb(28, 28, 44);
 }
 .container .to-do-list {
   padding: 1.2rem;
-  width: 600px;
-  min-height: 400px;
+  width: 650px;
+  min-height: 500px;
   background-color: #fff;
   border-radius: 5px;
+}
+.container .to-do-list .title {
+  display: inline-block;
+  text-align: center !important;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+.container .to-do-list .title h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
 }
 .container .to-do-list input {
   width: 100%;
@@ -31,6 +46,14 @@
   display: block;
   box-shadow: 0 0 2px gray;
   outline: none;
+}
+.container .to-do-list input::-moz-placeholder {
+  color: gray;
+  font-size: 1.1rem;
+}
+.container .to-do-list input::placeholder, .container .to-do-list input::-moz-placeholder {
+  color: gray;
+  font-size: 1.1rem;
 }
 .container .to-do-list #to-do-item {
   list-style: none;
@@ -77,9 +100,6 @@
   }
 }
 @media screen and (max-width: 360px) {
-  .container {
-    background-color: green;
-  }
   .to-do-list {
     padding-right: 40px;
   }
